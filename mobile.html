@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Development Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Container Styles */
+    .container {
+      padding-top: 50px;
+    }
+    
+    /* Navbar Styles */
+    .navbar {
+      background-color: #007bff;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+    
+    /* Section Heading */
+    .section-heading {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+    
+    /* Hover Effect for Cards */
+    .course-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+    
+    /* Image Hover Effect */
+    .img-hover-effect {
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+    .img-hover-effect:hover {
+      transform: scale(1.1);
+    }
+
+    /* Key Features Section */
+    .feature-box {
+      background-color: #f8f9fa;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Content Box */
+    .content-box {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .course-card {
+        margin-bottom: 20px;
+      }
+    }
+    /* certification section */
+.section {
+            padding: 60px 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            /* Slight zoom-in on hover */
+        }
+
+        h2,
+        h3 {
+            color: #4CAF50;
+            /* Green headings */
+        }
+
+        p {
+            color: #555;
+            /* Slightly lighter text */
+        }
+
+        .cert-img {
+            width: 100%;
+            max-width: 400px;
+            /* Limit image size */
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .cert-img:hover {
+            transform: scale(1.1) rotate(3deg);
+            /* Enlarge and rotate image on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Add shadow to image */
+        }
+
+        .cert-content {
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cert-content:hover {
+            transform: translateX(10px);
+            /* Slide content slightly to the right on hover */
+        }
+
+        .btn-green {
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .btn-green:hover {
+            background-color: #388E3C;
+            transform: translateY(-5px);
+            /* Lift button on hover */
+        }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mobile App Development</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Course</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills You'll Learn</a></li>
+          <li class="nav-item"><a class="nav-link" href="#modules">Technical Modules</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Key Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-learn">Why Learn</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About the Course Section -->
+    <section id="about">
+      <h2 class="section-heading">About the Course</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Our Mobile App Development course covers everything you need to know to start building apps for Android and iOS. Learn the best practices, programming languages, frameworks, and tools that will help you succeed in the mobile development industry.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="mobile.jfif" style="width:500px;height:200px;" class="img-fluid img-hover-effect" alt="Mobile App Development">
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills You'll Learn Section -->
+    <section id="skills">
+      <h2 class="section-heading">Skills You'll Learn</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <i class="fas fa-code fa-3x mb-3"></i>
+            <h5>App Programming</h5>
+            <p>Learn how to write code for mobile apps using Java, Kotlin, and Swift for Android and iOS.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <i class="fas fa-paint-brush fa-3x mb-3"></i>
+            <h5>UI/UX Design</h5>
+            <p>Understand the principles of UI/UX design to build intuitive and user-friendly interfaces.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <i class="fas fa-cloud fa-3x mb-3"></i>
+            <h5>Backend Integration</h5>
+            <p>Learn how to integrate APIs and manage app data with cloud services like Firebase and AWS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Modules Section -->
+    <section id="modules">
+      <h2 class="section-heading">Technical Modules</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="course-card">
+            <img src="frontend.jfif" class="img-fluid" alt="Frontend Development">
+            <h5>Frontend Development</h5>
+            <p>Learn how to develop responsive and interactive user interfaces for mobile apps.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="course-card">
+            <img src="backend.jfif" class="img-fluid" alt="Backend Integration">
+            <h5>Backend Integration</h5>
+            <p>Learn how to integrate back-end services, APIs, and manage databases.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="course-card">
+            <img src="testing.jfif" class="img-fluid" alt="App Testing">
+            <h5>App Testing</h5>
+            <p>Understand how to write tests, debug apps, and ensure a smooth user experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features">
+      <h2 class="section-heading">Key Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <img src="cross.jfif" class="img-fluid mb-3" alt="Feature 1">
+            <h5>Cross-Platform Development</h5>
+            <p>Build apps that work seamlessly on both Android and iOS using modern frameworks.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <img src="real.jfif" class="img-fluid mb-3" alt="Feature 2">
+            <h5>Real-Time Data Sync</h5>
+            <p>Integrate real-time features into your apps, such as chat, notifications, and more.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <img src="performance.jfif" class="img-fluid mb-3" alt="Feature 3">
+            <h5>Performance Optimization</h5>
+            <p>Learn how to optimize your app’s performance, reduce loading times, and improve user experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certification" class="section text-center">
+      <div class="container">
+          <h2>Certification</h2>
+          <div class="row align-items-center">
+              <!-- Certification Image -->
+              <div class="col-md-6">
+                  <div class="cert-image">
+                      <img src="certificate.jfif" alt="Certification" class="img-fluid cert-img">
+                  </div>
+              </div>
+
+              <!-- Certification Content -->
+              <div class="col-md-6">
+                  <div class="cert-content">
+                      <h3>Full Stack Developer Certification</h3>
+                      <p>Upon successful completion of the Full Stack Developer course, you will receive an
+                          industry-recognized certification that demonstrates your expertise in web development,
+                          backend technologies, databases, and cloud deployment.</p>
+                      <p>This certification will boost your career prospects and help you stand out in the competitive
+                          tech industry.</p>
+                      <button class="btn btn-green">Get Your Certificate</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Why Learn Mobile App Development -->
+    <section id="why-learn">
+      <h2 class="section-heading">Why Learn Mobile App Development?</h2>
+      <div class="content-box">
+        <p>Mobile app development is one of the most in-demand skills in the tech industry today. With millions of people using mobile apps daily, there’s never been a better time to learn how to create powerful and engaging mobile applications. This course will give you the foundation to build your career in mobile development and open up exciting job opportunities.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
+
